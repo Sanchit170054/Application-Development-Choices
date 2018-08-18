@@ -23,8 +23,7 @@ public class Exercise05Mainline {
 						Scanner sc = new Scanner(System.in); //Scanner class using the sc for the console input
 				
 			   System.out.println("Enter a line of text or just press return (enter) to stop the loop:");
-				System.out.println("\n\n\n*****************************************************");
-
+				
 				String str = sc.nextLine().trim();    //take the input from the user and then trim the inout using 
 				 
 				while (str.length() > 0) {  //initiate the whle loop
@@ -115,11 +114,16 @@ public class Exercise05Mainline {
         System.out.println("\n\nThe input line, trimmed, upper case converted to lower case, non-alpha removed, and reversed.");
         System.out.println(reverse);
         
+        System.out.println("");
+        
         if (reverse.equals(ls)) {
         	
-        	System.out.println(str2);
+        	System.out.println("The string is a palindrome!");
+        } else
+        {
+        	System.out.println("This string is not a palindrome!");
         }
       
         
 	}
-}
+}}
